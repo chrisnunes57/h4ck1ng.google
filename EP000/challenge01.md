@@ -1,6 +1,6 @@
 # Chess
 
-### Description
+## Description
 
 This is a chess game that is rigged in favor of the computer. When you play, the CPU will generate more queens, making it impossible to win. Interestingly, the site has a "Master Login" button that leads to the url `/admin.php`.
 
@@ -8,7 +8,7 @@ To get the flag, you need to checkmate the computer.
 
 -----
 
-### Solution 1
+## Solution 1
 
 This was the solution that I came up with on the first go-around. You can bypass the login page at `/admin.php` by using the SQLi payload `' OR 1=1 -- `. Once there, you'll see a page titled "Change config of the Chess AI!". 
 
@@ -16,7 +16,7 @@ To win, you need to select the "No" option for "AI Queen Cheats" and click the s
 
 -----
 
-### Solution 2
+## Solution 2
 
 A better solution is apparent when inspecting the source code of the chess game. You can see a definition for this `load_baseboard()` function:
 
