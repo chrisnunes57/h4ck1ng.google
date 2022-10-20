@@ -19,3 +19,4 @@ Hint: "Always search deeper"
   - nah don't think so
 - In the javascript files, searching for stuff like "html", "script", or "var " will get results, but not the whole thing.
 - I think that we could rebuild the entire hex dump by searching for stuff like "0000", "0001", etc... but is that worth the effort?
+- After reconstructing hexdump, line 7466 references "acelpvc.dll", which is known trojan malware
