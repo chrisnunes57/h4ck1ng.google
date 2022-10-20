@@ -6,11 +6,15 @@ This is a chess game that is rigged in favor of the computer. When you play, the
 
 To get the flag, you need to checkmate the computer.
 
+-----
+
 ### Solution 1
 
 This was the solution that I came up with on the first go-around. You can bypass the login page at `/admin.php` by using the SQLi payload `' OR 1=1 -- `. Once there, you'll see a page titled "Change config of the Chess AI!". 
 
 To win, you need to select the "No" option for "AI Queen Cheats" and click the submit button. From there, I just played the computer in a normal game of chess and won.
+
+-----
 
 ### Solution 2
 
